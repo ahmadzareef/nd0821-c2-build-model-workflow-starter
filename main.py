@@ -40,7 +40,7 @@ def go(config: DictConfig):
             _ = mlflow.run(
                 f"{config['main']['components_repository']}/get_data",
                 "main",
-                parameters={
+                parameters={ 
                     "sample": config["etl"]["sample"],
                     "artifact_name": "sample2.csv",
                     "artifact_type": "raw_data",
